@@ -19,5 +19,7 @@ public class IfBedingungAufgabe_1 {
         else {
             System.out.println("Large");
             }
+
+
     }
 }
