@@ -18,6 +18,8 @@ public class IfBedingung {
         } else {
             System.out.println(randomNumber);
             System.out.println("The number is between 10 and 50.");
+
+
         }
     }
 
