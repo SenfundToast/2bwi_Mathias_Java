@@ -7,6 +7,8 @@ import java.util.Scanner;
 
 public class BankomatBeispiel {
     public static void main(String[] args) throws IOException {
+        //Variablen & Methoden klein - camelcase - englisch
+        // Klassen Gross camelcase
 
         final int CANCEL = 4;
 
