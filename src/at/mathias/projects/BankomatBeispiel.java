@@ -49,7 +49,7 @@ public class BankomatBeispiel {
                 int amountwithdrawn = scanner.nextInt();
                 bankBalance = bankBalance - amountwithdrawn;
                 System.out.println();
-                System.out.println("Sie haben " + bankBalance + " Euro abgehoben");
+                System.out.println("Sie haben " + amountwithdrawn + " Euro abgehoben");
 
             } else if (selection == 3) {
 
