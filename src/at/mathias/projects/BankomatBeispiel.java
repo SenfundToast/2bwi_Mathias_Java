@@ -41,7 +41,7 @@ public class BankomatBeispiel {
                 System.out.println("Geben Sie den Betrag ein den Sie einzahlen möchten:");
                 int amountPaid = scanner.nextInt();
                 bankBalance = bankBalance + amountPaid;
-                System.out.println("Sie haben " + bankBalance + " Euro eingezahlt!");
+                System.out.println("Sie haben " + amountPaid + " Euro eingezahlt!");
 
             } else if (selection == 2) {
                 System.out.println();
