@@ -14,9 +14,9 @@ public class Würfelspiel {
         Random random = new Random();
         int mainMenuSelection = 0;
         int subMenuSelection = 0;
+        int diceRoll = 6;
         final int CANCEL = 3;
         Scanner scanner = new Scanner(System.in);
-        boolean isNewGame = true;
 
         while (mainMenuSelection != CANCEL) {
             System.out.println();
@@ -34,7 +34,7 @@ public class Würfelspiel {
 
             if (mainMenuSelection == 1) {
                 while (subMenuSelection != CANCEL) {
-                    System.out.println("Du hast 6 Würfe gegen den Computer");
+                    System.out.println("Du hast " + diceRoll + " würfe gegen den Computer");
                     System.out.println("Drücken Sie:");
                     System.out.println();
                     System.out.println("1. neu Würfeln");
