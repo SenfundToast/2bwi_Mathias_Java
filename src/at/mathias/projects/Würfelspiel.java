@@ -15,6 +15,10 @@ public class Würfelspiel {
         int mainMenuSelection = 0;
         int subMenuSelection = 0;
         int diceRoll = 6;
+        int playerPoints = 0;
+        int computerPoints = 0;
+        int playerTotalPoints = 0;
+        int computerTotalPoints = 0;
         final int CANCEL = 3;
         Scanner scanner = new Scanner(System.in);
 
@@ -34,11 +38,11 @@ public class Würfelspiel {
 
             if (mainMenuSelection == 1) {
                 while (subMenuSelection != CANCEL) {
-                    System.out.println("Du hast " + diceRoll + " würfe gegen den Computer");
+                    System.out.println();
                     System.out.println("Drücken Sie:");
                     System.out.println();
                     System.out.println("1. neu Würfeln");
-                    System.out.println("2. Highscore");
+                    System.out.println("2. Punkte");
                     System.out.println("3. Menü");
 
                     subMenuSelection = scanner.nextInt();
@@ -47,15 +51,38 @@ public class Würfelspiel {
                     int randomComputer = random.nextInt(1, 7);
 
                     if (subMenuSelection == 1) {
+                        int pointsDifference = computerPoints - playerPoints;
 
                         if (randomComputer > randomNumber) {
-                            System.out.println("Du hast gegen den Computer verloren");
+                            System.out.println();
+                            computerPoints += 1;
+                            diceRoll -= 1;
+                            System.out.println("Spieler wins " + playerPoints);
+                            System.out.println("Computer wins " + computerPoints);
+                            System.out.println("Sie haben nun " + diceRoll + " würfe gegen den Computer");
 
                         } else if (randomNumber > randomComputer) {
-                            System.out.println("Du hast gegen den Computer gewonnen");
+                            System.out.println();
+                            playerPoints += 1;
+                            diceRoll -= 1;
+                            System.out.println("Spieler wins " + playerPoints);
+                            System.out.println("Computer wins " + computerPoints);
+                            System.out.println("Sie haben gegen den Computer gewonnen");
+                            System.out.println("Sie haaben nun " + diceRoll + " würfe gegen den Computer");
+                        } else if (diceRoll == 0) {
+                            System.out.println("Ende der Runde um wieder zu Spielen drücken Sie 1");
+
+                            if (playerPoints > computerPoints) {
+                                playerTotalPoints += 1;
+                            } else if (computerPoints > playerPoints) {
+                                playerTotalPoints += 1;
+                            }
                         }
                     }
-
+                    if (subMenuSelection == 2) {
+                        System.out.println("Spieler Punkte: " + playerTotalPoints);
+                        System.out.println("Computer Punkte: " + computerTotalPoints);
+                    }
 
                 }
 
