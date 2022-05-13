@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.concurrent.atomic.DoubleAdder;
 
 
 public class Würfelspiel {
@@ -14,6 +15,7 @@ public class Würfelspiel {
         Random random = new Random();
         int mainMenuSelection = 0;
         int subMenuSelection = 0;
+        int gameMenuSelection = 0;
         int diceRoll = 6;
         int playerPoints = 0;
         int computerPoints = 0;
@@ -51,7 +53,6 @@ public class Würfelspiel {
                     int randomComputer = random.nextInt(1, 7);
 
                     if (subMenuSelection == 1) {
-                        int pointsDifference = computerPoints - playerPoints;
 
                         if (randomComputer > randomNumber) {
                             System.out.println();
@@ -68,15 +69,24 @@ public class Würfelspiel {
                             System.out.println("Spieler wins " + playerPoints);
                             System.out.println("Computer wins " + computerPoints);
                             System.out.println("Sie haben gegen den Computer gewonnen");
-                            System.out.println("Sie haaben nun " + diceRoll + " würfe gegen den Computer");
-                        } else if (diceRoll == 0) {
-                            System.out.println("Ende der Runde um wieder zu Spielen drücken Sie 1");
+                            System.out.println("Sie haben nun " + diceRoll + " würfe gegen den Computer");
+
+                            if (diceRoll == 0) {
+                                System.out.println();
+                                System.out.println("Ende der Runde um wieder zu Spielen drücken Sie 1");
+
 
                             if (playerPoints > computerPoints) {
                                 playerTotalPoints += 1;
                             } else if (computerPoints > playerPoints) {
                                 playerTotalPoints += 1;
+                                playerPoints = 0;
+                                computerPoints = 0;
+                                diceRoll = 6;
+                            } else if (gameMenuSelection == 1) {
+
                             }
+                         }
                         }
                     }
                     if (subMenuSelection == 2) {
