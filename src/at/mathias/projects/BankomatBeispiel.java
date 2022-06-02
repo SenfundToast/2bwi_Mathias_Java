@@ -23,7 +23,7 @@ public class BankomatBeispiel {
 
             System.out.println("Selektieren Sie die gewünschte Funktinon:");
 
-            System.out.println(" 1.  Einzahlen");
+            System.out.println(" 1. Einzahlen");
 
             System.out.println(" 2. Abheben");
 
