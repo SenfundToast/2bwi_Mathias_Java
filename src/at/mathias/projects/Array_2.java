@@ -7,7 +7,6 @@ public class Array_2 {
         int total = 0;
 
         for (int i = 0; i < data.length; i++) {
-
             total += data[i];
             System.out.println("Zahl + " +data[i]);
         }
