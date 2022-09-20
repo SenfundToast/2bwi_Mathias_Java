@@ -9,9 +9,12 @@ public class CrossSum_3 {
                 sum = sum + Character.getNumericValue(number[i]);
             }
 
+            int[] count = new int count.length[];
 
 
+            for (int i = 0; i < count.length; i++) {
 
+            }
 
 
         }
