@@ -7,16 +7,21 @@ public class CrossSum_3 {
             int sum = 0;
             for (int i = 0; i < number.length; i++) {
                 sum = sum + Character.getNumericValue(number[i]);
+                System.out.println("Quersumme von " + cnt +  ": " + sum);
             }
 
-            int[] count = new int count.length[];
+
+            int [] arr = new int [1001];
+
+
+
+            int[] count = new int [arr.length];
 
 
             for (int i = 0; i < count.length; i++) {
 
             }
-
-
         }
     }
+    public static int getCrossum()
 }

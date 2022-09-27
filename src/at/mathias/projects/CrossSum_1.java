@@ -11,7 +11,7 @@ public class CrossSum_1 {
                 sum = sum + Character.getNumericValue(number[i]);
              }
 
-            if (sum==15) {
+             if (sum==15){
                 System.out.println("Number: " + cnt + " Quersumme: " + sum);
             }
         }
