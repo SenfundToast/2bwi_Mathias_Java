@@ -1,19 +1,17 @@
 public class CrossSum_3 {
     public static void main(String[] args) {
-        for (int cnt = 0; cnt < 1001; cnt++) {
-            String numberAsString = Integer.toString(cnt);
-            char[] number = numberAsString.toCharArray();
+
+        int [] arr = new int [1001];
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = calculateCrossSum(i);
+        }
 
             int sum = 0;
             for (int i = 0; i < number.length; i++) {
                 sum = sum + Character.getNumericValue(number[i]);
-                System.out.println("Quersumme von " + cnt +  ": " + sum);
+                System.out.println("Quersumme von " + i +  ": " + sum);
             }
-
-
-            int [] arr = new int [1001];
-
-
 
             int[] count = new int [arr.length];
 
@@ -23,5 +21,12 @@ public class CrossSum_3 {
             }
         }
     }
-    public static int getCrossum()
+    public static int calculateCrossSum(int number) {
+        int crossum = 0;
+        while (0 != number) {
+            crossum = crossum + (number % 10);
+            number = number / 10;
+        }
+        return crossum;
+    }
 }
