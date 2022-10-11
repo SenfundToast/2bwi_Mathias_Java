@@ -2,11 +2,7 @@ package at.mathias.projects;
 
 
 public class CrossSum_4 {
-
     public static void main(String[] args) {
-
-
-            System.out.println("Gib mir eine Zahl");
 
             for (int cnt = 0; cnt < 1001; cnt++) {
                 String numberAsString = Integer.toString(cnt);
