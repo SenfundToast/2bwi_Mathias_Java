@@ -1,4 +1,4 @@
-package at.mathias.projects;
+package WhileLoop;
 
 import java.util.Random;
 

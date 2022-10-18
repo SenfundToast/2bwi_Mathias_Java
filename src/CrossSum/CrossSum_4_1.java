@@ -1,4 +1,4 @@
-
+package CrossSum;
 
 public class CrossSum_4_1 {
     public static void main(String[] args) {

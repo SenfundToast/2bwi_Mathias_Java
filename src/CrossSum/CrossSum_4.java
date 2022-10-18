@@ -1,4 +1,4 @@
-package at.mathias.projects;
+package CrossSum;
 
 
 public class CrossSum_4 {

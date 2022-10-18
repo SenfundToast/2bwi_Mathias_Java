@@ -1,4 +1,4 @@
-package at.mathias.projects;
+package CrossSum;
 
 
 import java.util.InputMismatchException;

@@ -1,4 +1,4 @@
-package at.mathias.projects;
+package SwitchStatement;
 
 import java.util.Random;
 

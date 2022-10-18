@@ -1,3 +1,5 @@
+package CrossSum;
+
 public class CrossSum_2 {
     public static void main(String[] args) {
         for (int cnt = 0; cnt < 1001; cnt++) {

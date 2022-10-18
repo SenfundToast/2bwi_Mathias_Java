@@ -1,4 +1,4 @@
-package at.mathias.projects;
+package CrossSum;
 
 public class CrossSum_1 {
     public static void main(String[] args) {

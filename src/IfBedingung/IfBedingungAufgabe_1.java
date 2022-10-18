@@ -1,4 +1,4 @@
-package at.mathias.projects;
+package IfBedingung;
 
 import java.util.Random;
 

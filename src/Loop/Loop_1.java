@@ -1,4 +1,4 @@
-package at.mathias.projects;
+package Loop;
 
 public class Loop_1 {
     public static void main(String[] args) {
