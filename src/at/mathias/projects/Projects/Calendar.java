@@ -16,7 +16,7 @@ public class Calendar {
                 endSeparator = " |\n";
             }
             System.out.print(separator + nameOfWeekdays[i] + endSeparator);
-
         }
+
     }
 }
