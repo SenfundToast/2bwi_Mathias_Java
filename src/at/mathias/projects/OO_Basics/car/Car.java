@@ -6,8 +6,6 @@ public class Car {
     public String serialNumber;
     public double fuelAmount;
     public int maxFuelAmount;
-    public int amountOfReception;
-
 
     public void drive() {
         this.fuelAmount -= this.fuelConsumption / 100;
@@ -25,8 +23,14 @@ public class Car {
             System.out.println("Not enough fuel to go to Superboost");
         }
     }
-    public void setOfReception(){
 
-        System.out.println("Tuuut!");
+    public void honk(int amountOfReception) {
+        for (int i = 0; i < amountOfReception; i++) {
+            System.out.println("Tuuut!");
+        }
+    }
+
+    public double getRemainingRange() {
+        return this.fuelAmount;
     }
 }
