@@ -33,4 +33,10 @@ public class Car {
     public double getRemainingRange() {
         return this.fuelAmount;
     }
+
+    public Car(int fuelAmount, String color, String serialNumber) {
+        this.fuelAmount = fuelAmount;
+        this.color = color;
+        this.serialNumber = serialNumber;
+    }
 }
