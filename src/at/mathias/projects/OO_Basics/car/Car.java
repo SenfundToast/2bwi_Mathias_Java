@@ -1,11 +1,13 @@
 package at.mathias.projects.OO_Basics.car;
 
+//dont do that later
 public class Car {
-    public String color;
-    public double fuelConsumption;
-    public String serialNumber;
-    public double fuelAmount;
-    public int maxFuelAmount;
+    private String color;
+    private double fuelConsumption;
+    private String serialNumber;
+    private double fuelAmount;
+    private int maxFuelAmount;
+    private int amountFuelIntMotor;
 
     public void drive() {
         this.fuelAmount -= this.fuelConsumption / 100;
@@ -40,6 +42,53 @@ public class Car {
         this.serialNumber = serialNumber;
     }
 
+    public void setAmountFuelIntMotor(int amountFuelIntMotor) {
+        this.amountFuelIntMotor = amountFuelIntMotor;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setFuelAmount(double fuelAmount) {
+        this.fuelAmount = fuelAmount;
+    }
+
+    public void setFuelConsumption(double fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
+    }
+
+    public void setMaxFuelAmount(int maxFuelAmount) {
+        this.maxFuelAmount = maxFuelAmount;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public double getFuelAmount() {
+        return fuelAmount;
+    }
+
+    public double getFuelConsumption() {
+        return fuelConsumption;
+    }
+
+    public int getAmountFuelIntMotor() {
+        return amountFuelIntMotor;
+    }
+
+    public int getMaxFuelAmount() {
+        return maxFuelAmount;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
 }
 
 
