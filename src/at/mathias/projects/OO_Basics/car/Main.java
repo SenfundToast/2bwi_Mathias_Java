@@ -1,5 +1,7 @@
 package at.mathias.projects.OO_Basics.car;
 
+import java.lang.reflect.Type;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -20,5 +22,9 @@ public class Main {
         Car c2 = new Car(1,"green","1234");
         System.out.println("");
         System.out.println(c2.getColor());
+
+        Engine e1 = new Engine(140, Engine.TYPE.DIESEL);
+        System.out.println("");
+        System.out.println(e1.getHorsePower() + " " + e1.getType());
     }
 }

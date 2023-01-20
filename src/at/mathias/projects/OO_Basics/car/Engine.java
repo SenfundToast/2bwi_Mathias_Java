@@ -4,18 +4,18 @@ import groovy.lang.GString;
 
 public class Engine {
     private Engine engine;
-    private enum TYPE {DIESEL, GAS}
+    public enum TYPE {DIESEL, GAS}
     private int horsePower;
-    private String type; //Diesel oder Benzin
+    private TYPE type; //Diesel oder Benzin
 
-    public Engine(int horsePower, String type) {
+    public Engine(int horsePower, TYPE type) {
         this.horsePower = horsePower;
         this.type = type;
     }
 
     /*
-            amount should be between 0 and 100
-             */
+    amount should be between 0 and 100
+    */
     public void drive(int amount) {
         System.out.println("The motor is running with" + amount);
     }
@@ -24,7 +24,7 @@ public class Engine {
         return horsePower;
     }
 
-    public String getType() {
+    public TYPE getType() {
         return type;
     }
 }

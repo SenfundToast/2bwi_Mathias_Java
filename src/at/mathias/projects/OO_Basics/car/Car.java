@@ -2,6 +2,8 @@ package at.mathias.projects.OO_Basics.car;
 
 //dont do that later
 public class Car {
+    //Gedächtnisvariablen - Instantzvariablen
+    private Engine engine;
     private String color;
     private double fuelConsumption;
     private String serialNumber;
@@ -36,11 +38,21 @@ public class Car {
         return this.fuelAmount;
     }
 
-    public Car(int fuelAmount, String color, String serialNumber) {
+    /*
+        public Car(int fuelAmount, String color, String serialNumber) {
         this.fuelAmount = fuelAmount;
         this.color = color;
         this.serialNumber = serialNumber;
     }
+
+     */
+
+    public Car(int Engine_engine, String color, String serialNumber) {
+        this.engine = engine;
+        this.color = color;
+        this.serialNumber = serialNumber;
+    }
+
 
     public void setAmountFuelIntMotor(int amountFuelIntMotor) {
         this.amountFuelIntMotor = amountFuelIntMotor;
@@ -86,8 +98,18 @@ public class Car {
         return color;
     }
 
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
+
     public String getSerialNumber() {
         return serialNumber;
+
+
     }
 }
 
