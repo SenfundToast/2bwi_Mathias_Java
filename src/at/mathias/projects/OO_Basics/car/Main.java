@@ -23,6 +23,12 @@ public class Main {
         System.out.println("");
         System.out.println(c2.getColor());
 
+        System.out.println("");
+        c1.drive();
+        c1.setSpeedCar(1);
+        System.out.println(c1.getSpeedCar());
+
+
         Engine e1 = new Engine(140, Engine.TYPE.DIESEL);
         System.out.println("");
         System.out.println(e1.getHorsePower() + " " + e1.getType());

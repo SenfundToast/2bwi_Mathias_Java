@@ -10,10 +10,18 @@ public class Car {
     private double fuelAmount;
     private int maxFuelAmount;
     private int amountFuelIntMotor;
+    private int speedCar;
+
 
     public void drive() {
         this.fuelAmount -= this.fuelConsumption / 100;
         System.out.println("I am driving");
+
+        if (this.speedCar <= 50) {
+            System.out.println("langsam");
+        } else {
+            System.out.println("schnell");
+        }
     }
 
     public void brake() {
@@ -106,8 +114,17 @@ public class Car {
         this.engine = engine;
     }
 
+    public int getSpeedCar() {
+        return speedCar;
+    }
+
+    public void setSpeedCar(int speedCar) {
+        this.speedCar = speedCar;
+    }
+
     public String getSerialNumber() {
         return serialNumber;
+
 
 
     }

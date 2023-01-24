@@ -1,7 +1,5 @@
 package at.mathias.projects.OO_Basics.car;
 
-import groovy.lang.GString;
-
 public class Engine {
     private Engine engine;
     public enum TYPE {DIESEL, GAS}
@@ -18,6 +16,15 @@ public class Engine {
     */
     public void drive(int amount) {
         System.out.println("The motor is running with" + amount);
+    }
+
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
     }
 
     public int getHorsePower() {
