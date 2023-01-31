@@ -1,5 +1,8 @@
 package at.mathias.projects.OO_Basics.car;
 
+import java.util.ArrayList;
+import java.util.List;
+
 //dont do that later
 public class Car {
     //Gedächtnisvariablen - Instantzvariablen
@@ -11,6 +14,7 @@ public class Car {
     private int maxFuelAmount;
     private int amountFuelIntMotor;
     private int speedCar;
+    private List<RearMirror> mirrors;
 
 
     public void drive() {
@@ -59,8 +63,16 @@ public class Car {
         this.engine = engine;
         this.color = color;
         this.serialNumber = serialNumber;
+        this.mirrors = new ArrayList<>();
     }
 
+    public void addMirror(RearMirror rearMirror) {
+        this.mirrors.add(rearMirror);
+    }
+
+    public List<RearMirror> getMirrors() {
+        return mirrors;
+    }
 
     public void setAmountFuelIntMotor(int amountFuelIntMotor) {
         this.amountFuelIntMotor = amountFuelIntMotor;
@@ -124,9 +136,6 @@ public class Car {
 
     public String getSerialNumber() {
         return serialNumber;
-
-
-
     }
 }
 
