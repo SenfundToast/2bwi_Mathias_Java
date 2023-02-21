@@ -38,5 +38,14 @@ public class Main {
         c1.addMirror(r2);
 
         System.out.println(c1.getMirrors().get(0).getPosition());
+
+        System.out.println("");
+
+        Tire t1_1 = new Tire(1, 70, Tire.TYPE.SUMMER_TIRES);
+        Tire t1_2 = new Tire(2, 69, Tire.TYPE.SUMMER_TIRES);
+        Tire t1_3 = new Tire(3, 71, Tire.TYPE.SUMMER_TIRES);
+        Tire t1_4 = new Tire(4, 70, Tire.TYPE.SUMMER_TIRES);
+
+
     }
 }
