@@ -15,6 +15,7 @@ public class Car {
     private int amountFuelIntMotor;
     private int speedCar;
     private List<RearMirror> mirrors;
+    private List<Tire> tires;
 
 
     public void drive() {

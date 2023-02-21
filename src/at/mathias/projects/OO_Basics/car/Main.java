@@ -37,7 +37,6 @@ public class Main {
         c1.addMirror(r1);
         c1.addMirror(r2);
 
-
         System.out.println(c1.getMirrors().get(0).getPosition());
     }
 }
