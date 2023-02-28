@@ -60,7 +60,7 @@ public class Car {
 
      */
 
-    public Car(int Engine_engine, String color, String serialNumber) {
+    public Car(Engine engine, String color, String serialNumber) {
         this.engine = engine;
         this.color = color;
         this.serialNumber = serialNumber;
@@ -74,6 +74,7 @@ public class Car {
     public List<RearMirror> getMirrors() {
         return mirrors;
     }
+
 
     public void setAmountFuelIntMotor(int amountFuelIntMotor) {
         this.amountFuelIntMotor = amountFuelIntMotor;
