@@ -1,4 +1,4 @@
-package at.mathias.projects.OO_Basics.car;
+package at.mathias.projects.OO_Basics.carBasic;
 
 import java.lang.reflect.Type;
 

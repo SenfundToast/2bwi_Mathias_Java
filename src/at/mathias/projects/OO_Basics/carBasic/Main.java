@@ -1,13 +1,12 @@
-package at.mathias.projects.OO_Basics.car;
-
-import groovy.lang.Tuple;
-
-import java.lang.reflect.Type;
+package at.mathias.projects.OO_Basics.carBasic;
 
 public class Main {
     public static void main(String[] args) {
 
+
         //Tire
+        RearMirror r1_1 = new RearMirror(50,2);
+        RearMirror r1_2 = new RearMirror(100,2);
 
         Tire t1_1 = new Tire(1, 70, Tire.TYPE.SUMMER_TIRES);
         Tire t1_2 = new Tire(2, 69, Tire.TYPE.SUMMER_TIRES);
