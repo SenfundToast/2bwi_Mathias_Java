@@ -4,7 +4,7 @@ public class Engine {
     private Engine engine;
     public enum TYPE {DIESEL, GAS}
     private int horsePower;
-    private TYPE type; //Diesel oder Benzin
+    private TYPE type; //Diesel oder Gas
 
     public Engine(int horsePower, TYPE type) {
         this.horsePower = horsePower;
