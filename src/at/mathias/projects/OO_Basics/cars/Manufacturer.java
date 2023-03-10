@@ -3,10 +3,10 @@ package at.mathias.projects.OO_Basics.cars;
 public class Manufacturer {
     private String nameOfManufacturer;
     private String countryOfManufacturer;
-    private String discountOfManufacturer;
+    private double discountOfManufacturer;
 
 
-    public Manufacturer(String nameOfManufacturer, String countryOfManufacturer, String discountOfManufacturer) {
+    public Manufacturer(String nameOfManufacturer, String countryOfManufacturer, double discountOfManufacturer) {
         this.nameOfManufacturer = nameOfManufacturer;
         this.countryOfManufacturer = countryOfManufacturer;
         this.discountOfManufacturer = discountOfManufacturer;
@@ -28,11 +28,11 @@ public class Manufacturer {
         this.countryOfManufacturer = countryOfManufacturer;
     }
 
-    public String getDiscountOfManufacturer() {
+    public double getDiscountOfManufacturer() {
         return discountOfManufacturer;
     }
 
-    public void setDiscountOfManufacturer(String discountOfManufacturer) {
+    public void setDiscountOfManufacturer(double discountOfManufacturer) {
         this.discountOfManufacturer = discountOfManufacturer;
     }
 }
