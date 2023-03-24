@@ -1,5 +1,7 @@
 package at.mathias.projects.OO_Basics.lamp;
 
+import groovyjarjarantlr4.v4.runtime.atn.StarLoopEntryState;
+
 import java.awt.*;
 
 public class Main {
@@ -15,6 +17,6 @@ public class Main {
         lamp1.addLamp(glow3);
         lamp1.turnAllOff();
         lamp1.turnAllOn();
+        System.out.println("test");
     }
-
 }
