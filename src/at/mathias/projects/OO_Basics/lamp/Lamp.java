@@ -1,5 +1,7 @@
 package at.mathias.projects.OO_Basics.lamp;
 
+import at.mathias.projects.OO_Basics.carBasic.RearMirror;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +16,18 @@ public class Lamp {
         this.nameOfLamp = name;
         this.glowElements = new ArrayList<>();
         this.totalPowerConsumption = totalPowerConsumption;
+    }
+
+    public void addLamp(GlowElement glowElement) {
+        this.glowElements.add(glowElement);
+    }
+
+    public GlowElement getGetNameOfGlowElements() {
+        return getNameOfGlowElements;
+    }
+
+    public void setGetNameOfGlowElements(GlowElement getNameOfGlowElements) {
+        this.getNameOfGlowElements = getNameOfGlowElements;
     }
 
     public String getNameOfLamp() {

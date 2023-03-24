@@ -20,6 +20,7 @@ public class GlowElement {
     }
 
 
+
     public String getNameOfGlowElement() {
         return nameOfGlowElement;
     }
