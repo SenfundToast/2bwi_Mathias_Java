@@ -5,6 +5,11 @@ public class Main {
 
         //https://www.tutorials.de/threads/mathematische-operationen-in-java.6700/
 
+        StandardCalculator stand = new StandardCalculator();
+        ScientificCalculator science = new ScientificCalculator();
+        RootCalculator root = new RootCalculator();
+
+        System.out.println("Addition: ");
 
     }
 }

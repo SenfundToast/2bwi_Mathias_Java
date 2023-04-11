@@ -5,8 +5,11 @@ public class StandardCalculator {
     private double number2;
 
     public class standardCalculator {
+
+
         public double addition(double number1, double number2) {
             return number1 + number2;
+
         }
 
         public double subtraction(double number1, double number2) {
