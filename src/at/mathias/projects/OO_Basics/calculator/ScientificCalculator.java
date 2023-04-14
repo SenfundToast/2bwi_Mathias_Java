@@ -1,6 +1,6 @@
-package at.mathias.projects.OO_Basics.Calculator;
+package at.mathias.projects.OO_Basics.calculator;
 
-public class ScientificCalculator {
+public class ScientificCalculator extends StandardCalculator{
     public double sine(double num) {
         double numRadian = Math.toRadians(num);
         return Math.sin(numRadian);
