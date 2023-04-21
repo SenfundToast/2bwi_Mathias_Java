@@ -7,11 +7,11 @@ public class Main {
     public static void main(String[] args) {
 
         BaseAccount base1 = new BaseAccount();
-        CheckingAccount check1 = new CheckingAccount(3000);
+        CheckingAccount check1 = new CheckingAccount(2000);
 
         SavingsAccount save1 = new SavingsAccount();
-        save1.deposit(50);
-        save1.withdraw(40);
+        save1.deposit(2000);
+        save1.withdraw(2000);
         System.out.println(save1.getBalance);
     }
 }

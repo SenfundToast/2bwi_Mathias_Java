@@ -1,6 +1,6 @@
 package at.mathias.projects.OO_Basics.bank;
 
-public class SavingsAccount {
+public class SavingsAccount extends BaseAccount{
     public boolean getBalance;
 
     @Override

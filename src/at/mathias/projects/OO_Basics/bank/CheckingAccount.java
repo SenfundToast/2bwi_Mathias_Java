@@ -1,6 +1,6 @@
 package at.mathias.projects.OO_Basics.bank;
 
-public class CheckingAccount {
+public class CheckingAccount extends BaseAccount{
     private int limit;
 
     public CheckingAccount(int limit) {
